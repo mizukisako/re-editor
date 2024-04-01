@@ -1140,12 +1140,13 @@ class _CodeLineEditingControllerImpl extends ValueNotifier<CodeLineEditingValue>
     // {|} => {
     //           |
     //        }
-    if (_selectionInClosure) {
-      newCodeLines.add(CodeLine(alignIndent + indent));
-      offset = newCodeLines.last.length;
-    } else {
-      offset = alignIndent.length;
-    }
+    // if (_selectionInClosure) {
+    //   newCodeLines.add(CodeLine(alignIndent + indent));
+    //   offset = newCodeLines.last.length;
+    // } else {
+    //   offset = alignIndent.length;
+    // }
+    offset = alignIndent.length;
     // Align the next line's intent with pre code line
     newCodeLines.add(after.copyWith(
       text: alignIndent + after.text
