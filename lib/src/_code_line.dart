@@ -1132,7 +1132,7 @@ class _CodeLineEditingControllerImpl extends ValueNotifier<CodeLineEditingValue>
     final CodeLine before = _codeLineBefore(selection.start);
     final CodeLine after = _codeLineAfter(selection.end);
     newCodeLines.add(before);
-    final String alignIndent = before.substring(0, before.text.indentLength);
+    // final String alignIndent = before.substring(0, before.text.indentLength);
     final int offset;
     // If the enter tap in a closure, we should add a new code line inside the closure
     // with an addtional indent.
