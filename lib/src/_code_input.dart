@@ -340,22 +340,25 @@ class _CodeInputController extends ChangeNotifier implements DeltaTextInputClien
 class _SmartTextEditingDelta {
 
   static const List<_ClosureSymbol> _closureSymbols = [
-    _ClosureSymbol('{', '}'),
-    _ClosureSymbol('[', ']'),
-    _ClosureSymbol('(', ')'),
+    // 自動補完をオフ
+    // _ClosureSymbol('{', '}'),
+    // _ClosureSymbol('[', ']'),
+    // _ClosureSymbol('(', ')'),
   ];
 
   static const List<String> _quoteSymbols = [
-    '\'', '"', '`'
+    // 自動補完をオフ
+    // '\'', '"', '`'
   ];
 
   static const List<_ClosureSymbol> _wrapSymbols = [
-    _ClosureSymbol('{', '}'),
-    _ClosureSymbol('[', ']'),
-    _ClosureSymbol('(', ')'),
-    _ClosureSymbol('\'', '\''),
-    _ClosureSymbol('"', '"'),
-    _ClosureSymbol('`', '`'),
+    // 自動補完をオフ
+    // _ClosureSymbol('{', '}'),
+    // _ClosureSymbol('[', ']'),
+    // _ClosureSymbol('(', ')'),
+    // _ClosureSymbol('\'', '\''),
+    // _ClosureSymbol('"', '"'),
+    // _ClosureSymbol('`', '`'),
   ];
 
   final TextEditingDelta _delta;
